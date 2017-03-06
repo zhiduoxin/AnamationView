@@ -15,6 +15,12 @@
 		E9EC0B761E6951FF00435D55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9EC0B741E6951FF00435D55 /* LaunchScreen.storyboard */; };
 		E9EC0B811E6951FF00435D55 /* AnamationviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0B801E6951FF00435D55 /* AnamationviewTests.m */; };
 		E9EC0B8C1E6951FF00435D55 /* AnamationviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0B8B1E6951FF00435D55 /* AnamationviewUITests.m */; };
+		E9EC0B9A1E69526200435D55 /* main-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9EC0B991E69526200435D55 /* main-1.jpg */; };
+		E9EC0B9C1E69527E00435D55 /* main-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9EC0B9B1E69527E00435D55 /* main-2.jpg */; };
+		E9EC0B9F1E6952C600435D55 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0B9E1E6952C600435D55 /* SecondViewController.m */; };
+		E9EC0BA21E69546900435D55 /* SWAnamationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BA11E69546900435D55 /* SWAnamationManager.m */; };
+		E9EC0BA51E696B5900435D55 /* SWNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BA41E696B5900435D55 /* SWNavViewController.m */; };
+		E9EC0BAB1E6D410600435D55 /* SWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		E9EC0B871E6951FF00435D55 /* AnamationviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnamationviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EC0B8B1E6951FF00435D55 /* AnamationviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnamationviewUITests.m; sourceTree = "<group>"; };
 		E9EC0B8D1E6951FF00435D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9EC0B991E69526200435D55 /* main-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-1.jpg"; sourceTree = "<group>"; };
+		E9EC0B9B1E69527E00435D55 /* main-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "main-2.jpg"; sourceTree = "<group>"; };
+		E9EC0B9D1E6952C600435D55 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		E9EC0B9E1E6952C600435D55 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E9EC0BA01E69546900435D55 /* SWAnamationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAnamationManager.h; sourceTree = "<group>"; };
+		E9EC0BA11E69546900435D55 /* SWAnamationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAnamationManager.m; sourceTree = "<group>"; };
+		E9EC0BA31E696B5900435D55 /* SWNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNavViewController.h; sourceTree = "<group>"; };
+		E9EC0BA41E696B5900435D55 /* SWNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWNavViewController.m; sourceTree = "<group>"; };
+		E9EC0BA91E6D410600435D55 /* SWInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWInteractiveTransition.h; sourceTree = "<group>"; };
+		E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWInteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +121,21 @@
 				E9EC0B6A1E6951FE00435D55 /* AppDelegate.m */,
 				E9EC0B6C1E6951FE00435D55 /* ViewController.h */,
 				E9EC0B6D1E6951FE00435D55 /* ViewController.m */,
+				E9EC0B9D1E6952C600435D55 /* SecondViewController.h */,
+				E9EC0B9E1E6952C600435D55 /* SecondViewController.m */,
+				E9EC0BA31E696B5900435D55 /* SWNavViewController.h */,
+				E9EC0BA41E696B5900435D55 /* SWNavViewController.m */,
 				E9EC0B6F1E6951FF00435D55 /* Main.storyboard */,
 				E9EC0B721E6951FF00435D55 /* Assets.xcassets */,
 				E9EC0B741E6951FF00435D55 /* LaunchScreen.storyboard */,
 				E9EC0B771E6951FF00435D55 /* Info.plist */,
+				E9EC0B991E69526200435D55 /* main-1.jpg */,
+				E9EC0B9B1E69527E00435D55 /* main-2.jpg */,
 				E9EC0B661E6951FE00435D55 /* Supporting Files */,
+				E9EC0BA01E69546900435D55 /* SWAnamationManager.h */,
+				E9EC0BA11E69546900435D55 /* SWAnamationManager.m */,
+				E9EC0BA91E6D410600435D55 /* SWInteractiveTransition.h */,
+				E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */,
 			);
 			path = Anamationview;
 			sourceTree = "<group>";
@@ -246,8 +272,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EC0B9A1E69526200435D55 /* main-1.jpg in Resources */,
 				E9EC0B761E6951FF00435D55 /* LaunchScreen.storyboard in Resources */,
 				E9EC0B731E6951FF00435D55 /* Assets.xcassets in Resources */,
+				E9EC0B9C1E69527E00435D55 /* main-2.jpg in Resources */,
 				E9EC0B711E6951FF00435D55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9EC0BA51E696B5900435D55 /* SWNavViewController.m in Sources */,
+				E9EC0BA21E69546900435D55 /* SWAnamationManager.m in Sources */,
+				E9EC0B9F1E6952C600435D55 /* SecondViewController.m in Sources */,
 				E9EC0B6E1E6951FE00435D55 /* ViewController.m in Sources */,
 				E9EC0B6B1E6951FE00435D55 /* AppDelegate.m in Sources */,
+				E9EC0BAB1E6D410600435D55 /* SWInteractiveTransition.m in Sources */,
 				E9EC0B681E6951FE00435D55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +537,7 @@
 				E9EC0B921E6951FF00435D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9EC0B931E6951FF00435D55 /* Build configuration list for PBXNativeTarget "AnamationviewTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +546,7 @@
 				E9EC0B951E6951FF00435D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9EC0B961E6951FF00435D55 /* Build configuration list for PBXNativeTarget "AnamationviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +555,7 @@
 				E9EC0B981E6951FF00435D55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

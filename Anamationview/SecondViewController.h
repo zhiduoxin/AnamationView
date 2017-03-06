@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  Anamationview
 //
 //  Created by lx on 17/3/3.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-@property (assign, nonatomic) CGRect btnFrame;
-
+@interface SecondViewController : UIViewController
 
 @end
-
