@@ -8,9 +8,14 @@
 
 #import "SecondViewController.h"
 #import "SWAnamationManager.h"
+#import "SWInteractiveTransition.h"
 
 
 @interface SecondViewController ()<UIViewControllerTransitioningDelegate>
+
+@property (strong, nonatomic) SWInteractiveTransition *interactive;
+
+
 
 @end
 
@@ -33,6 +38,12 @@
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
      return [SWAnamationManager transitionWithSWAnmationType:SWAnmationTypeFromPresent];
 }
+
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator{
+    return _interactive.interation ? _interactive: nil;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.edgesForExtendedLayout = UIRectEdgeNone;
@@ -56,6 +67,10 @@
     [self.view addSubview:btnOther];
     [btnOther addTarget:self action:@selector(btnOtherOnclick:) forControlEvents:UIControlEventTouchUpInside];
     [btnOther setTitle:@"pod" forState:UIControlStateNormal];
+    
+    self.interactive = [SWInteractiveTransition swInteractiveTransition:SWInteractiveTransitionDismiss direction:SWInteractiveTransitionDirectionUp];
+    
+    [self.interactive addPanGestureForViewController:self];
 }
 - (void)btnOnclick:(UIButton *)sender{
 

@@ -9,12 +9,26 @@
 #import "ViewController.h"
 #import "SecondViewController.h"
 #import "SWInteractiveTransition.h"
+#import "SWInteractiveTransition.h"
 
-@interface ViewController ()<UINavigationBarDelegate>
+#import "Comment.h"
+
+@interface ViewController ()<UINavigationBarDelegate,UIViewControllerTransitioningDelegate>
+
+@property (strong, nonatomic) SWInteractiveTransition *interactiveTrasition;
+
 
 @end
 
 @implementation ViewController
+
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+        self.transitioningDelegate = self;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,6 +58,18 @@
     [self.view addSubview:btnOther];
     [btnOther addTarget:self action:@selector(btnOtherOnclick:) forControlEvents:UIControlEventTouchUpInside];
     [btnOther setTitle:@"push" forState:UIControlStateNormal];
+    
+    self.interactiveTrasition = [SWInteractiveTransition swInteractiveTransition:2 direction:2];
+    [self.interactiveTrasition addPanGestureForViewController:self];
+    
+    SWWeakSelf(self);
+    self.interactiveTrasition.isPresent = ^(BOOL isPresent){
+        if (isPresent == YES) {
+            [weakSelf btnOnclick:nil];
+        }else{
+            [weakSelf btnOtherOnclick:nil];
+        }
+    };
     
 }
 
@@ -88,6 +114,10 @@
     }
     [gesture setTranslation:CGPointZero inView:gesture.view];
     self.btnFrame = button.frame;
+}
+
+- (nullable id <UIViewControllerInteractiveTransitioning>)interactionControllerForPresentation:(id <UIViewControllerAnimatedTransitioning>)animator{
+    return self.interactiveTrasition.interation ? self.interactiveTrasition: nil;
 }
 
 - (void)didReceiveMemoryWarning {

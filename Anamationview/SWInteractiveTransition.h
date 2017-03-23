@@ -29,7 +29,11 @@ typedef NS_ENUM(NSInteger, SWInteractiveTransitionType) {
 
 @property (copy, nonatomic) GestureConifg isPresent;
 
+@property (assign, nonatomic) BOOL interation;
+
 - (void)addPanGestureForViewController:(UIViewController *)veiwcontroller;
 
++ (instancetype)swInteractiveTransition:(SWInteractiveTransitionType)type direction:(SWInteractiveTransitionDirection)direction;
+- (instancetype)initSWInteractiveTransition:(SWInteractiveTransitionType)type irection:(SWInteractiveTransitionDirection)direction;
 
 @end

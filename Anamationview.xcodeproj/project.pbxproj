@@ -21,6 +21,7 @@
 		E9EC0BA21E69546900435D55 /* SWAnamationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BA11E69546900435D55 /* SWAnamationManager.m */; };
 		E9EC0BA51E696B5900435D55 /* SWNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BA41E696B5900435D55 /* SWNavViewController.m */; };
 		E9EC0BAB1E6D410600435D55 /* SWInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */; };
+		E9EC0BB91E6D735800435D55 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC0BB81E6D735800435D55 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,9 @@
 		E9EC0BA41E696B5900435D55 /* SWNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWNavViewController.m; sourceTree = "<group>"; };
 		E9EC0BA91E6D410600435D55 /* SWInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWInteractiveTransition.h; sourceTree = "<group>"; };
 		E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWInteractiveTransition.m; sourceTree = "<group>"; };
+		E9EC0BAC1E6D691F00435D55 /* Comment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		E9EC0BB71E6D735800435D55 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E9EC0BB81E6D735800435D55 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		E9EC0B5A1E6951FC00435D55 = {
 			isa = PBXGroup;
 			children = (
+				E9EC0BAE1E6D6FBB00435D55 /* Public */,
 				E9EC0B651E6951FE00435D55 /* Anamationview */,
 				E9EC0B7F1E6951FF00435D55 /* AnamationviewTests */,
 				E9EC0B8A1E6951FF00435D55 /* AnamationviewUITests */,
@@ -136,6 +141,7 @@
 				E9EC0BA11E69546900435D55 /* SWAnamationManager.m */,
 				E9EC0BA91E6D410600435D55 /* SWInteractiveTransition.h */,
 				E9EC0BAA1E6D410600435D55 /* SWInteractiveTransition.m */,
+				E9EC0BAC1E6D691F00435D55 /* Comment.h */,
 			);
 			path = Anamationview;
 			sourceTree = "<group>";
@@ -164,6 +170,16 @@
 				E9EC0B8D1E6951FF00435D55 /* Info.plist */,
 			);
 			path = AnamationviewUITests;
+			sourceTree = "<group>";
+		};
+		E9EC0BAE1E6D6FBB00435D55 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				E9EC0BB71E6D735800435D55 /* UIView+Extension.h */,
+				E9EC0BB81E6D735800435D55 /* UIView+Extension.m */,
+			);
+			name = Public;
+			path = Anamationview/Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +323,7 @@
 				E9EC0B6E1E6951FE00435D55 /* ViewController.m in Sources */,
 				E9EC0B6B1E6951FE00435D55 /* AppDelegate.m in Sources */,
 				E9EC0BAB1E6D410600435D55 /* SWInteractiveTransition.m in Sources */,
+				E9EC0BB91E6D735800435D55 /* UIView+Extension.m in Sources */,
 				E9EC0B681E6951FE00435D55 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

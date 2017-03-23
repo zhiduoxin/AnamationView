@@ -12,8 +12,6 @@
 
 @property (strong, nonatomic) UIViewController *vc;
 
-@property (assign, nonatomic) BOOL interation;
-
 @property (assign, nonatomic) SWInteractiveTransitionDirection  direction;
 
 @property (assign, nonatomic) SWInteractiveTransitionType type;
@@ -21,6 +19,17 @@
 @end
 
 @implementation SWInteractiveTransition
+
++ (instancetype)swInteractiveTransition:(SWInteractiveTransitionType)type direction:(SWInteractiveTransitionDirection)direction {
+    SWInteractiveTransition *swInteractiveTransitionVC = [[SWInteractiveTransition alloc] init];
+    swInteractiveTransitionVC.type = type;
+    swInteractiveTransitionVC.direction = direction;
+    return swInteractiveTransitionVC;
+}
+- (instancetype)initSWInteractiveTransition:(SWInteractiveTransitionType)type irection:(SWInteractiveTransitionDirection)direction{
+
+    return [SWInteractiveTransition swInteractiveTransition:type direction:direction];
+}
 
 - (void)addPanGestureForViewController:(UIViewController *)viewcontroller{
 
